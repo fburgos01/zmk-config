@@ -10,13 +10,12 @@
             compatible = "zmk,physical-layout-grid";
             display-name = "Default Layout";
             
-            // 1 row, 1 column matrix mapping
             matrix-columns = <1>;
             matrix-rows = <1>;
             
-            // CORRECTED: Properties inside key_physical_attrs must use = <...>
+            // Standard ZMK grid layout positional property format
             keys = <
-                &key_physical_attrs { column = <0>; row = <0>; }
+                &key_physical_attrs 0 0 0 0 1000 1000 0
             >;
         };
     };
