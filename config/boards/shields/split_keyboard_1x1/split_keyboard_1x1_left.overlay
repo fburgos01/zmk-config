@@ -3,7 +3,3 @@
 // instructions.
 
 #include "split_keyboard_1x1.dtsi"
-
-&kscan0 {
-    col-offset = <0>;
-};
