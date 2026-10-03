@@ -1,0 +1,24 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+#include "split_keyboard_1x1-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        
+        // Pin 4 is Column, Pin 5 is Row (Change these numbers if you soldered elsewhere)
+        col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+        row-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    };
+};
+
