@@ -14,9 +14,9 @@
             matrix-columns = <1>;
             matrix-rows = <1>;
             
-            // Defines the visual coordinate arrangement for ZMK
+            // CORRECTED: Properties inside key_physical_attrs must use = <...>
             keys = <
-                &key_physical_attrs { columns = <1>; rows = <1>; x = <0>; y = <0>; }
+                &key_physical_attrs { column = <0>; row = <0>; }
             >;
         };
     };
