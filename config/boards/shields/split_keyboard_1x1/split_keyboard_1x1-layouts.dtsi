@@ -5,18 +5,16 @@
 
 / {
     layouts {
-        // Parent wrapper node should NOT have compatible or display-name strings
-        
         physical_layout0: physical_layout_0 {
             compatible = "zmk,physical-layout-grid";
             display-name = "Default Layout";
 
-            matrix-columns = <1>;
+            matrix-columns = <2>;
             matrix-rows = <1>;
 
-            // Standard ZMK grid layout positional property format
             keys = <
                 &key_physical_attrs 100 100 0 0 0 0 0
+                &key_physical_attrs 100 100 100 0 0 0 0
             >;
         };
     };

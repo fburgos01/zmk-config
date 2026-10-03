@@ -3,22 +3,30 @@
 // instructions.
 
 #include <dt-bindings/zmk/matrix_transform.h>
-
 #include "split_keyboard_1x1-layouts.dtsi"
 
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
         zmk,physical-layout = &physical_layout0;
+    };
+
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <2>;
+        rows = <1>;
+        // Mapea la fila 0, col 0 al lado izquierdo, y la fila 0, col 1 al lado derecho
+        map = <
+            RC(0,0) RC(0,1)
+        >;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         
-        // Pin 4 is Column, Pin 5 is Row (Change these numbers if you soldered elsewhere)
         col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
         row-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 };
-

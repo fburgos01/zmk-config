@@ -1,13 +1,28 @@
+# Configuración específica para la mitad izquierda (Central por defecto)
 if SHIELD_SPLIT_KEYBOARD_1X1_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Split 1x1"
 
+# Define esta mitad como la central (Master)
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
+# Configuración explícita si se compila la mitad derecha como secundaria
+if SHIELD_SPLIT_KEYBOARD_1X1_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Split 1x1"
+
+# Desactiva el rol central para forzar que actúe como periférico (Slave)
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
+
+# Configuración global aplicable a ambas mitades
 if SHIELD_SPLIT_KEYBOARD_1X1_LEFT || SHIELD_SPLIT_KEYBOARD_1X1_RIGHT
 
 config ZMK_SPLIT
