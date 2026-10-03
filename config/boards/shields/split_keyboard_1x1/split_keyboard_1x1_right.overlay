@@ -1,5 +1,9 @@
 // This file was generated from a template. Edit it to match your keyboard.
 // See https://zmk.dev/docs/development/hardware-integration/new-shield for more
 // instructions.
-
+// split_keyboard_1x1_right.overlay
 #include "split_keyboard_1x1.dtsi"
+
+&default_transform {
+    col-offset = <1>;
+};
