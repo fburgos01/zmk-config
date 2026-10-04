@@ -1,0 +1,5 @@
+config SHIELD_SHW48P48_LEFT
+    def_bool $(shields_list_contains,shw48p48_left)
+
+config SHIELD_SHW48P48_RIGHT
+    def_bool $(shields_list_contains,shw48p48_right)

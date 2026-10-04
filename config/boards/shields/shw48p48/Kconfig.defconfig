@@ -1,0 +1,26 @@
+if SHIELD_SHW48P48_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "SHW48+48 Left"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SHW48P48_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "SHW48+48 Right"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
+
+if SHIELD_SHW48P48_LEFT || SHIELD_SHW48P48_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

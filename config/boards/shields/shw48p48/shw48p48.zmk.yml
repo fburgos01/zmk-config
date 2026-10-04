@@ -1,0 +1,11 @@
+file_format: "1"
+id: shw48p48
+name: SHW48+48
+type: shield
+features:
+  - keys
+requires:
+  - pro_micro
+siblings:
+  - shw48p48_left
+  - shw48p48_right
