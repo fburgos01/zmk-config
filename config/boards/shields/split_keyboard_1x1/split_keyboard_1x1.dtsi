@@ -21,12 +21,20 @@
             RC(0,0) RC(0,1)
         >;
     };
-
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
         diode-direction = "col2row";
         
-        col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-        row-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        col-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        row-gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;
     };
+
+//    kscan0: kscan {
+//        compatible = "zmk,kscan-gpio-matrix";
+//        diode-direction = "col2row";
+//       
+//        col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+//        row-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+//    };
 };
