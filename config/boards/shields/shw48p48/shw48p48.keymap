@@ -1,5 +1,22 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#
+#/ {
+#    keymap {
+#        compatible = "zmk,keymap";
+#
+#        default_layer {
+#            bindings = <
+#                &kp F1    &kp F2   &kp F3   &kp F4    &kp F5    &kp F6   &kp F7   &kp F8         &kp F9    &kp F10  &kp F11   &kp F12   &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp DEL
+#                &kp GRAVE &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6   &kp N7         &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp INS         &kp HOME
+#                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T    &kp Y    &kp U          &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH &kp DEL         &kp END
+#                &kp CLCK  &kp A    &kp S    &kp D     &kp F     &kp G    &kp H    &kp J          &kp K     &kp L    &kp SEMI  &kp SQT   &kp RET   &kp PG_UP &kp UP         &kp PG_DN
+#                &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B    &kp N    &kp M          &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT &kp LEFT  &kp DOWN &kp RIGHT       &kp RGUI
+#                &kp LCTRL &kp LALT &kp LGUI &kp SPACE &kp SPACE &kp RALT &kp RET  &kp SPACE      &kp SPACE &kp RALT &kp RGUI  &kp RCTRL &kp LALT  &kp LCTRL &kp LALT       &kp LCTRL
+#            >;
+#        };
+#    };
+#};
 
 / {
     keymap {
@@ -7,12 +24,19 @@
 
         default_layer {
             bindings = <
-                &kp F1    &kp F2   &kp F3   &kp F4    &kp F5    &kp F6   &kp F7   &kp F8         &kp F9    &kp F10  &kp F11   &kp F12   &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp DEL
-                &kp GRAVE &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6   &kp N7         &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp INS         &kp HOME
-                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T    &kp Y    &kp U          &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH &kp DEL         &kp END
-                &kp CLCK  &kp A    &kp S    &kp D     &kp F     &kp G    &kp H    &kp J          &kp K     &kp L    &kp SEMI  &kp SQT   &kp RET   &kp PG_UP &kp UP         &kp PG_DN
-                &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B    &kp N    &kp M          &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT &kp LEFT  &kp DOWN &kp RIGHT       &kp RGUI
-                &kp LCTRL &kp LALT &kp LGUI &kp SPACE &kp SPACE &kp RALT &kp RET  &kp SPACE      &kp SPACE &kp RALT &kp RGUI  &kp RCTRL &kp LALT  &kp LCTRL &kp LALT       &kp LCTRL
+
+                &kp ESC    &kp ESC    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11      &kp F12      &kp DEL       &kp PSCRN
+
+                &kp N0     &kp N1     &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS    &kp EQUAL     &kp BSPC      &kp HOME
+
+                &kp N2     &kp N3     &kp TAB    &kp Q      &kp W      &kp E      &kp R       &kp N5      &kp U       &kp I       &kp O       &kp P       &kp LBKT     &kp RBKT      &kp BSLH      &kp END
+
+                &kp N4     &kp N5     &kp CAPS   &kp A      &kp S      &kp D      &kp F       &kp T       &kp Y       &kp J       &kp K       &kp L       &kp SEMI     &kp SQT       &kp RET       &kp PG_UP
+
+                &kp N6     &kp N7     &kp LSHFT  &kp Z      &kp X      &kp C      &kp V       &kp G       &kp H       &kp M       &kp COMMA   &kp DOT     &kp FSLH     &kp RSHFT     &kp UP        &kp PG_DN
+
+                &kp N8     &kp N9     &kp LCTRL  &mo 1      &kp LGUI   &kp LALT   &kp SPACE   &kp B       &kp N       &kp SPACE   &kp RALT    &kp APP     &kp RCTRL    &kp LEFT      &kp DOWN      &kp RIGHT
+
             >;
         };
     };
