@@ -2,6 +2,10 @@
 #include <dt-bindings/zmk/keys.h>
 /*
 / {
+    chosen {
+        zmk,matrix-transform = &default_transform
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
