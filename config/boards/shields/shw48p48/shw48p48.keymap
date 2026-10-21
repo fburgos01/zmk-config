@@ -28,7 +28,7 @@
                 /* M1          M2      F1       F2           F3          F4            F5         F6        F7         F8      F9       F10       F11        F12      Del    PrtSc */
                 &bootloader   &trans   &trans  &trans   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans   &trans   &trans   &trans     &trans     &trans  &trans   &trans
                 /* 0        1          `            1            2            3            4            5            7        8        9        0        -        +        Bspc     Home */
-                &trans   &trasn     &trans        &trans      &trans       &trans       &trans       &trans       &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
+                &trans   &trans     &trans        &trans      &trans       &trans       &trans       &trans       &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
