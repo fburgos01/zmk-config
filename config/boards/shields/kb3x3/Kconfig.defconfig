@@ -1,6 +1,0 @@
-if SHIELD_KB3X3
-
-config ZMK_KEYBOARD_NAME
-    default "kb3x3"
-
-endif
