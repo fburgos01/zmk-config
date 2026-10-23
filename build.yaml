@@ -6,9 +6,10 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 include:
-# compilaciones normales
+# compilaciones normales con soporte para ZMK Studio
   - shield: shw48p48_left
     board: nice_nano
+    snippet: studio-rpc-usb-uart
   - shield: shw48p48_right
     board: nice_nano
 # --- OBJETIVOS DE RESETEO DE CONFIGURACIÓN ---
